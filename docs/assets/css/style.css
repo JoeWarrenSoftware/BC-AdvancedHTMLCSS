@@ -1,0 +1,254 @@
+/* Variables */
+:root {
+    --primary-backcolor: #1f1f1f;
+    --secondary-backcolor: #13122e;
+
+    --hyperlink-textcolor: #00cbd9;
+    --hyperlinkhover-textcolor: #00d953;
+
+    --primary-textcolor: #f3f3f3;
+    --secondary-textcolor: #d90000;
+
+    --logo1: #2edf02;
+    --logo2: #5df1fc;
+}
+
+/* Body */
+body
+{
+    background-color: var(--primary-backcolor);
+    color: var(--primary-textcolor);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 100;
+    display: flex;
+    flex-direction: column;
+}
+
+a {
+    color: var(--hyperlink-textcolor);
+}
+
+a:hover {
+    color: var(--hyperlinkhover-textcolor);
+    cursor: grab;
+}
+
+/* Header Style */
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border: 2px;
+    border-style: solid;
+    margin-bottom: 10px;
+    background-color: var(--secondary-backcolor);
+    color: var(--primary-textcolor);
+    margin: 5px 10px;
+}
+
+#logo {
+width: 100;
+background-color: var(--secondary-backcolor);
+}
+
+#search {
+    margin-right: 20px;
+}
+
+#contactUs {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: center;
+    border: none;
+}
+
+#contactForm {
+    border: var(--primary-textcolor);
+    border-style: solid;
+    padding: 20px;
+    margin: 50px 50px;
+    display: flex;
+    flex-direction: column;
+    min-width: 200px;
+    max-width: 600px;
+    align-self: center;
+    width: 100%;
+}
+
+#contactForm * {
+    margin: 5px 0;
+    width: 100%; 
+}
+
+#contactForm label {
+    text-align: left;
+}
+
+#contactForm button {
+    width: 100px;
+    align-self: center;
+    margin-top: 10px;
+}
+
+/* Main Body Style */
+
+.main {
+    display: flex;
+    flex-direction: row;
+    margin: 5px 10px;
+}
+
+article {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    border: 2px;
+    border-style: solid;
+    width: 80%;
+    margin-left: 0px;
+    padding: 10px 20px;
+    background-color: var(--secondary-backcolor);
+    color: var(--primary-textcolor);
+    text-align: center;
+}
+
+.articleBody {
+    align-items: center;
+    border: 2px;
+    border-style: dotted;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    padding-bottom: 10px;
+    width: 100%;
+}
+
+.lastArticleBody {
+    border: none;
+    padding-bottom: 10px;
+    width: 100%;
+}
+
+h1 {
+    text-align: center;
+}
+
+p, h2 {
+    text-align: left;
+}
+
+li {
+    margin-top: 10px;
+}
+
+img {
+    display: block;
+    margin: auto;
+    width: 500px;
+    height: auto;
+}
+
+ul li {
+    text-align: left;
+    margin: 10px 0px;
+}
+
+textarea {
+    resize: none;
+}
+
+
+.sidebar {
+    position: sticky;
+    top: 0;
+    height: 100vh;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    border: 2px;
+    border-style: solid;
+    width: 20%;
+    margin-left: 10px;
+    margin-bottom: 0px;
+    background-color: var(--secondary-backcolor);
+    color: var(--primary-textcolor);
+    text-align: center;
+}
+
+.sidebar a {
+    position: sticky;
+}
+
+.sidebar img {
+    width: 100%;
+}
+
+.sidebar a {
+    margin: 10px 5px;
+}
+
+.contactName::before {
+    content: "🪪";
+    font-size: 1.5rem;
+    padding-right: 5px;
+}
+
+.contactEmail::before {
+    content: "✉️";
+    font-size: 1.5rem;
+    padding-right: 5px;
+}
+
+.contactPhone::before {
+    content: "🖁";
+    font-size: 1.5rem;
+    padding-right: 5px;
+}
+
+.contactMessage::before {
+    content: "🖋️";
+    font-size: 1.5rem;
+    padding-right: 5px;
+}
+
+/* Footer Style */
+
+.footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    border: 2px;
+    border-style: solid;
+    height: 20px;
+    padding: 20px;
+    margin: 5px 10px;
+    background-color: var(--secondary-backcolor);
+    color: var(--primary-textcolor);
+}
+
+@media (max-width: 1000px) {
+    * {
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    header nav {
+        padding-right: 10px;
+    }
+    #search {
+        display: none;
+    }
+    article {
+        width: 100%;
+    }
+    .sidebar {
+        display: none;
+    }
+    img {
+        display: none;
+    }
+}
