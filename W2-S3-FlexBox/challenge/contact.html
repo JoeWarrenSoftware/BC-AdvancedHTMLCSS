@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Light Bank Home</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="assets/css/style.css">
+    </head>
+    <body>
+        <header class="header">
+            <svg id="logo"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 200 100"
+                width="100"
+                height="100">
+                <!-- Letter L -->
+                <path d="M 30 20 V 80 H 70" stroke="#2edf02" stroke-width="8" fill="none" />
+                
+                <!-- Letter B -->
+                <path d="M 70 20 V 80" stroke="#5df1fc" stroke-width="8" fill="none" />
+                <path d="M 70 20 C 90 20, 90 50, 70 50" stroke="#5df1fc" stroke-width="8" fill="none" />
+                <path d="M 70 50 C 90 50, 90 80, 70 80" stroke="#5df1fc" stroke-width="8" fill="none" />
+            </svg>
+            <!-- <img id="Logo" src="./assets/images/Logo.jpg"></img> -->
+            <nav>
+                <a href="./index.html">Home</a>
+                <a href="./services.html">Services</a>
+                <a href="./about.html">About</a>
+                <a href="./contact.html">Contact Us</a>
+            </nav>
+            <div id="search">
+                <input type="search" placeholder="Search..."></textarea>
+            </div>
+        </header>
+        <main class="main">
+            <article>
+                <div class="articleBody lastArticleBody" id="contactUs">
+                    <h1>Contact Us</h1>
+                    <p>If you would like to contact us, please fill in the below form:</p>
+                    <form id="contactForm">
+                        <label class="contactName" for="name">Name: </label>
+                        <input id="contactName" name="name"></input>
+                        <label class="contactEmail" for="email">Email:</label>
+                        <input id="contactEmail" name="email"></input>
+                        <label class="contactPhone" for="telephone">Telephone (Optional):</label>
+                        <input id="contactTelephone" name="telephone"></input>
+                        <label class="contactMessage" for="message">Message:</label>
+                        <textarea id="contactMessage" name="message" rows="5"></textarea>
+                        <button>Submit</button>
+                    </form>
+                </div>
+            </article>
+            <section class="sidebar">
+                <a class="serviceLink" href="./services.html#loans">Loans<img src="assets/images/Loans.jpg"></img></a>
+                <a class="serviceLink" href="./services.html#mortgages">Mortgages<img src="assets/images/Mortgages.jpg"></img></a>
+                <a class="serviceLink" href="./services.html#savings">Savings<img src="assets/images/Savings.jpg"></img></a>
+                <a class="serviceLink" href="./services.html#insurance">Insurance<img src="assets/images/Insurance.jpg"></img></a>
+            </section>
+        </main>
+        <footer class="footer">
+            Lightbank © 2024
+        </footer>
+    </body>
+</html>
